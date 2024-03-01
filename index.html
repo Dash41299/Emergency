@@ -23,6 +23,7 @@
             text-decoration: none;
             font-size: 4vw; /* Adjust font size based on viewport width */
             font-weight: 700; /* Make the font bolder */
+            animation: slide-up 1s ease-in-out infinite alternate; /* Added animation */
         }
         .contact-link i {
             margin-right: 15px;
@@ -34,12 +35,20 @@
             color: #FF4500; /* Changed call icon color to orange red */
             font-size: 7vw; /* Adjust icon size based on viewport width */
         }
+        @keyframes slide-up {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px);
+            }
+        }
     </style>
 </head>
 <body>
     <a class="contact-link" href="tel:9561825677"><i class="fas fa-train"></i>TRANSPORT DEPT EXTENSION<i class="fas fa-phone call-icon"></i></a> <!-- Changed icon -->
     <a class="contact-link" href="tel:7420060814"><i class="fas fa-stethoscope"></i>Dr. NITIN RAMCHANDRA MANDHARE<i class="fas fa-phone call-icon"></i></a> <!-- Changed icon -->
-    <a class="contact-link" href="tel:8956192663"><i class="fas fa-shield-alt"></i>ANNIRUDHA BURGUL<i class="fas fa-phone call-icon"></i></a> <!-- Security icon -->
+    <a class="contact-link" href="tel:8956192663"><i class="fas fa-shield-alt"></i>ANNIRUDHA BURGUL<i class="fas fa-phone call-icon"></i></a> <!-- Se
     <a class="contact-link" href="tel:7567763627"><i class="fas fa-exclamation-triangle"></i>SAFETY<i class="fas fa-phone call-icon"></i></a> <!-- Changed icon -->
     <a class="contact-link" href="tel:8956401202"><i class="fas fa-fire-alt"></i>FIRE STATION<i class="fas fa-phone call-icon"></i></a> <!-- Changed icon -->
 
